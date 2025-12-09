@@ -288,28 +288,40 @@
 
 .paymentMethod {
   border: 2px solid #e2e8f0;
-  padding: 20px;
+  padding: 25px 20px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
   transition: all 0.3s ease;
+  min-height: 140px;
+  justify-content: center;
 }
 
 .paymentMethod:hover {
   border-color: #007A8D;
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 122, 141, 0.15);
 }
 
 .paymentMethod.selected {
   border-color: #007A8D;
   background: rgba(0, 122, 141, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 122, 141, 0.2);
 }
 
 .paymentIcon {
-  font-size: 36px;
-  margin-bottom: 10px;
+  font-size: 56px;
+  margin-bottom: 12px;
+  filter: grayscale(0);
+}
+
+.paymentMethod span:last-child {
+  font-size: 16px;
+  color: #2d3748;
+  font-weight: 600;
+  text-align: center;
 }
 
 .paymentForm {
@@ -353,13 +365,20 @@
   border: 2px dashed #007A8D;
   margin: 20px 0;
   font-family: monospace;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 600;
   word-break: break-all;
+  letter-spacing: 1px;
+  color: #2d3748;
 }
 
 .boletoAviso {
   color: #ff6b6b;
   font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .confirmacaoIcon {
