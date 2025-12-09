@@ -1,25 +1,15 @@
 {
-  "name": "Explore+",
+  "name": "front-end",
   "version": "1.0.0",
-  "description": "Aplicação de Turismo em Caruaru - Pontos Turísticos, Restaurantes e Hotéis",
-  "main": "pages/index.js",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
-  "keywords": ["turismo", "restaurantes", "caruaru", "pontos turísticos"],
-  "author": "Explore+",
-  "license": "ISC",
   "dependencies": {
-    "next": "^14.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "cors": "^2.8.5",
-    "body-parser": "^1.20.2"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18"
   }
 }

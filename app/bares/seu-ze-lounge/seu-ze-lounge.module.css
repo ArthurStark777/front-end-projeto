@@ -1,0 +1,1027 @@
+/* seu-ze-lounge.module.css */
+.container {
+  background: #007A8D;
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+.header {
+  background: white;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.setaVoltar {
+  position: absolute;
+  left: 40px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #007A8D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #007A8D;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.setaVoltar:hover {
+  background: #007A8D;
+  color: white;
+}
+
+.tituloCentral {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 32px;
+}
+
+.iconImg {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.tituloCentral span {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+
+.barraBusca {
+    background: white;
+    margin: 20px 40px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr auto;
+    gap: 12px;
+    align-items: center;
+}
+
+.barraBusca input {
+    padding: 14px 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border 0.3s ease;
+}
+
+.barraBusca input:focus {
+    outline: none;
+    border-color: #007A8D;
+}
+
+.buscar {
+    padding: 14px 35px;
+    background: #0095FF;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 15px;
+}
+
+.buscar:hover {
+    background: #0077cc;
+}
+
+.opcoesFiltro {
+    display: flex;
+    gap: 12px;
+    margin: 0 40px 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.filtroBotao {
+    padding: 12px 24px;
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    color: #666;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.filtroBotao:hover {
+    border-color: #007A8D;
+    color: #007A8D;
+}
+
+.filtroBotao.active {
+    background: #007A8D;
+    border-color: #007A8D;
+    color: white;
+}
+
+.conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.restauranteCard {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.headerInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.restauranteNome {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2d3748;
+    margin: 0 0 10px 0;
+    text-transform: capitalize;
+}
+
+/* ===== CUPOM DESTAQUE - MELHORADO ===== */
+.cupomDestaque {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+    min-width: 280px;
+    border: 3px solid #ffffff;
+}
+
+.cupomBadge {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.descontoTexto {
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
+
+.cupomCodigo {
+    background: white;
+    color: #ff6b6b;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: 2px dashed #ff6b6b;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cupomCodigo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    background: #fff5f5;
+}
+
+.validadeTexto {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    opacity: 0.95;
+}
+
+.btnUsarCupom {
+    background: white;
+    color: #ff6b6b;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btnUsarCupom:hover {
+    background: #fff5f5;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.rating {
+    color: #ffa500;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+
+.interacaoButtons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.btnInteracao {
+    flex: 1;
+    padding: 12px 20px;
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btnInteracao:hover {
+    border-color: #007A8D;
+    background: #f8f9fa;
+}
+
+.carrossel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.carrosselBtn {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrosselBtn:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.imagemContainer {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.imagemPrincipal {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+.indicadores {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.indicador {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicador.ativo {
+    background: #007A8D;
+    width: 30px;
+    border-radius: 6px;
+}
+
+.secao {
+    margin-top: 30px;
+}
+
+.secao h2 {
+    font-size: 24px;
+    color: #2d3748;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.secao h3 {
+    font-size: 20px;
+    color: #2d3748;
+    margin: 20px 0 10px;
+}
+
+.descricao {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contato {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #007A8D;
+}
+
+.contato p {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #555;
+}
+
+.contato strong {
+    color: #2d3748;
+}
+
+/* ===== CARACTERÍSTICAS - MELHORADO ===== */
+.caracteristicasGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.caracteristicaItem {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 18px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    color: #2d3748;
+    font-weight: 500;
+    border: 2px solid #e2e8f0;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.caracteristicaItem:hover {
+    border-color: #007A8D;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 122, 141, 0.15);
+}
+
+.checkIcon {
+    color: #28a745;
+    font-weight: 700;
+    font-size: 22px;
+    background: #d4edda;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.precoCard {
+    background: linear-gradient(135deg, #007A8D 0%, #005f6d 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.precoCard h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.precoValor {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 10px 0 20px;
+}
+
+.btnReservar {
+    background: white;
+    color: #007A8D;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btnReservar:hover {
+    background: #f8f9fa;
+    transform: scale(1.05);
+}
+
+.infoExtra {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.infoExtra p {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #28a745;
+    font-weight: 600;
+}
+
+.regrasList {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.regraItem {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 15px;
+    color: #555;
+}
+
+.regraItem:last-child {
+    border-bottom: none;
+}
+
+.bulletIcon {
+    color: #007A8D;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* ===== ESTILOS PARA ESPECIALIDADES E PAGAMENTO ===== */
+.especialidadesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.especialidadeItem {
+    background: linear-gradient(135deg, #fff5f0 0%, #ffffff 100%);
+    padding: 18px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    color: #2d3748;
+    font-weight: 500;
+    border: 2px solid #ffe4d6;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.especialidadeItem:hover {
+    border-color: #ff6b6b;
+    background: linear-gradient(135deg, #ffffff 0%, #fff5f0 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.15);
+}
+
+.chefIcon {
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.pagamentoGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.pagamentoItem {
+    background: linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%);
+    padding: 15px 18px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #2d3748;
+    font-weight: 600;
+    border: 2px solid #bae7ff;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.pagamentoItem:hover {
+    border-color: #0095FF;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 149, 255, 0.15);
+}
+
+.precoDestaque {
+    background: linear-gradient(135deg, #007A8D 0%, #005f6d 100%);
+    border-radius: 16px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 8px 20px rgba(0, 122, 141, 0.3);
+}
+
+.precoComparar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.precoRiscado {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+.precoAtual {
+    color: white;
+    font-size: 42px;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.economiaTexto {
+    color: #ffeb3b;
+    font-size: 16px;
+    font-weight: 700;
+    background: rgba(255, 235, 59, 0.2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.horariosList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.horarioItem {
+    background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #e0f2fe;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.horarioItem:hover {
+    border-color: #007A8D;
+    transform: translateX(5px);
+    box-shadow: 0 4px 10px rgba(0, 122, 141, 0.1);
+}
+
+.horarioItem strong {
+    color: #2d3748;
+    font-weight: 700;
+    text-transform: capitalize;
+    min-width: 140px;
+}
+
+.horarioItem span {
+    color: #007A8D;
+    font-weight: 600;
+}
+
+/* ===== MODAL CUPOM - MELHORADO ===== */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal {
+    background: white;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modalHeader {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    padding: 25px;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+}
+
+.modalHeader h2 {
+    color: white;
+    font-size: 26px;
+    font-weight: 800;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.closeModal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid white;
+    color: white;
+    font-size: 32px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.closeModal:hover {
+    background: white;
+    color: #ff6b6b;
+    transform: rotate(90deg);
+}
+
+.cupomModalDestaque {
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
+}
+
+.descontoGrande {
+    font-size: 64px;
+    font-weight: 900;
+    color: #ff6b6b;
+    margin: 0;
+    text-shadow: 3px 3px 6px rgba(255, 107, 107, 0.2);
+}
+
+.subtituloCupom {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0 20px;
+}
+
+.instrucaoCupom {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.cupomCodeGrande {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    font-size: 32px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 3px;
+    border: 3px dashed white;
+    box-shadow: 0 8px 20px rgba(255, 107, 107, 0.4);
+    margin: 0 auto 15px;
+    display: inline-block;
+}
+
+.cupomCodeGrande:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 30px rgba(255, 107, 107, 0.5);
+}
+
+.copiado {
+    color: #28a745;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.modalInfo {
+    padding: 25px 30px;
+    border-top: 2px solid #f0f0f0;
+}
+
+.restauranteNomeModal {
+    color: #2d3748;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+
+.infoLista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.infoLista p {
+    margin: 0;
+    padding: 12px 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #555;
+    border-left: 4px solid #007A8D;
+}
+
+.infoLista strong {
+    color: #2d3748;
+    font-weight: 700;
+}
+
+.modalFooter {
+    display: flex;
+    gap: 12px;
+    padding: 20px 30px 30px;
+}
+
+.copiarBtn {
+    flex: 1;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.copiarBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+.fecharBtn {
+    background: #e2e8f0;
+    color: #2d3748;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.fecharBtn:hover {
+    background: #cbd5e0;
+}
+
+/* ===== BARRA FIXA - MELHORADO ===== */
+.barraFixa {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, white 0%, #f8f9fa 100%);
+    padding: 20px 40px;
+    box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-top: 3px solid #ff6b6b;
+}
+
+.barraInfo {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.barraDescontoBox {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.barraDesconto {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 18px;
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+}
+
+.barraValidadeSmall {
+    color: #666;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.barraPrecos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.barraPrecoAntigo {
+    color: #999;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.barraPreco {
+    color: #007A8D;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.btnBarraFixa {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    color: white;
+    border: none;
+    padding: 18px 40px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+.btnBarraFixa:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.5);
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+    .header,
+    .barraBusca,
+    .opcoesFiltro,
+    .conteudo {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .setaVoltar {
+        left: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .barraBusca {
+        grid-template-columns: 1fr;
+    }
+
+    .headerInfo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cupomDestaque {
+        width: 100%;
+    }
+
+    .restauranteNome {
+        font-size: 24px;
+    }
+
+    .imagemPrincipal {
+        height: 300px;
+    }
+
+    .carrosselBtn {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+
+    .caracteristicasGrid,
+    .especialidadesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .pagamentoGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .barraFixa {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .barraInfo {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .btnBarraFixa {
+        width: 100%;
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+
+    .barraPreco {
+        font-size: 22px;
+    }
+
+    .descontoGrande {
+        font-size: 48px;
+    }
+
+    .cupomCodeGrande {
+        font-size: 24px;
+        padding: 15px 20px;
+    }
+
+    .modal {
+        width: 95%;
+    }
+
+    .modalFooter {
+        flex-direction: column;
+    }
+}
+

@@ -1,0 +1,480 @@
+/* citi-hotel-express-caruaru.module.css */
+.container {
+  background: #007A8D;
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
+.header {
+  background: white;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.setaVoltar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #007A8D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #007A8D;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.setaVoltar:hover {
+  background: #007A8D;
+  color: white;
+}
+
+.tituloCentral {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 28px;
+}
+
+.tituloCentral span:last-child {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.barraBusca {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 12px;
+}
+
+.barraBusca input {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  background: white;
+}
+
+.buscar {
+  padding: 12px 30px;
+  background: #0095FF;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+.buscar:hover {
+  background: #0077cc;
+}
+
+.opcoesFiltro {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 40px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filtroBotao {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: #2d3748;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.filtroBotao:hover,
+.filtroBotao.active {
+  background: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.conteudo {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 40px;
+}
+
+.hotelCard {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.hotelNome {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 10px;
+}
+
+.rating {
+  color: #ffa500;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.interacaoButtons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.btnInteracao {
+  background: #f7fafc;
+  border: 2px solid #e2e8f0;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btnInteracao:hover {
+  background: #007A8D;
+  color: white;
+  border-color: #007A8D;
+}
+
+.carrossel {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.imagemContainer {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.imagemPrincipal {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carrosselBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+.carrosselBtn:first-child {
+  left: 20px;
+}
+
+.carrosselBtn:last-child {
+  right: 20px;
+}
+
+.carrosselBtn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.indicadores {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.indicador {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicador.ativo {
+  background: #007A8D;
+  width: 30px;
+  border-radius: 6px;
+}
+
+.secao {
+  margin-top: 30px;
+}
+
+.secao h2 {
+  font-size: 24px;
+  color: #2d3748;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.secao h3 {
+  font-size: 18px;
+  color: #2d3748;
+  margin: 20px 0 10px 0;
+}
+
+.descricao {
+  color: #666;
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contato {
+  background: #f7fafc;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.contato p {
+  margin: 10px 0;
+  color: #2d3748;
+  font-size: 15px;
+}
+
+.precoCard {
+  background: linear-gradient(135deg, #007A8D 0%, #005f6d 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.precoCard h3 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.precoValor {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.btnReservar {
+  background: white;
+  color: #007A8D;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btnReservar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.infoExtra {
+  background: #f7fafc;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.infoExtra p {
+  margin: 10px 0;
+  color: #28a745;
+  font-weight: 600;
+}
+
+.comodidadesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.comodidadeItem {
+  background: #f7fafc;
+  padding: 15px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  color: #2d3748;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.comodidadeItem:hover {
+  background: #e6f7f9;
+  transform: translateX(5px);
+  border: 1px solid #007A8D;
+}
+
+.checkIcon {
+  color: #28a745;
+  font-weight: 700;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.regrasList {
+  margin-top: 20px;
+}
+
+.regraItem {
+  padding: 15px 20px;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: start;
+  gap: 15px;
+  color: #2d3748;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.regraItem:hover {
+  background: #f7fafc;
+  transform: translateX(5px);
+}
+
+.bulletIcon {
+  color: #007A8D;
+  font-size: 24px;
+  font-weight: 700;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.reservaFixa {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.precoResumo {
+  display: flex;
+  flex-direction: column;
+}
+
+.precoResumo span {
+  color: #666;
+  font-size: 14px;
+}
+
+.precoResumo strong {
+  color: #007A8D;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.btnReservarFixo {
+  background: #0095FF;
+  color: white;
+  border: none;
+  padding: 15px 60px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btnReservarFixo:hover {
+  background: #0077cc;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .barraBusca,
+  .opcoesFiltro,
+  .conteudo {
+    padding: 0 20px;
+  }
+
+  .barraBusca {
+    grid-template-columns: 1fr;
+  }
+
+  .hotelCard {
+    padding: 20px;
+  }
+
+  .hotelNome {
+    font-size: 24px;
+  }
+
+  .imagemContainer {
+    height: 300px;
+  }
+
+  .comodidadesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .reservaFixa {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btnReservarFixo {
+    width: 100%;
+  }
+}

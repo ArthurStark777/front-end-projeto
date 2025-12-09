@@ -1,0 +1,47 @@
+.cardWrapper {
+  position: relative;
+}
+
+.btnFavorite,
+.btnShare {
+  position: absolute;
+  top: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 20;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btnFavorite {
+  right: 12px;
+}
+
+.btnShare {
+  left: 12px;
+}
+
+.btnFavorite:hover,
+.btnShare:hover {
+  transform: scale(1.2);
+  background: rgba(255, 107, 53, 0.95);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
+}
+
+.btnFavorite.active {
+  animation: pulse 0.4s ease;
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    transform: scale(1); 
+  }
+  50% { 
+    transform: scale(1.3); 
+  }
+}
